@@ -1,0 +1,31 @@
+<circuit version="1.0.0" rev="1130" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Ground" CircId="Ground-1" mainComp="false" Show_id="false" Show_Val="false" Pos="912,576" rotation="0" hflip="1" vflip="1" label="Ground-1" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-2" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="820,548" rotation="0" hflip="1" vflip="1" label="Resistor-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="MCU" CircId="mega328-3" mainComp="false" Show_id="true" Show_Val="false" Pos="724,468" rotation="0" hflip="1" vflip="1" label="mega328-3" idLabPos="-23.5565,-17.8971" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+
+<item itemtype="Led" CircId="Led-5" mainComp="false" Show_id="false" Show_Val="false" Pos="880,548" rotation="0" hflip="1" vflip="1" label="Led-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Amarillo" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-16" mainComp="false" Show_id="false" Show_Val="false" Pos="756,416" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-16" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+
+<item itemtype="TextComponent" CircId="TextComponent-25" mainComp="false" Show_id="true" Show_Val="false" Pos="876,508" rotation="0" hflip="1" vflip="1" label="LED" idLabPos="-4.09276,13.2071" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 Pixels" Border="0 Pixels" Opacity="-11" Font="Helvetica [Cronyx]" Font_Size="6 Pixels" Fixed_Width="false" />
+
+<item itemtype="TextComponent" CircId="TextComponent-31" mainComp="false" Show_id="true" Show_Val="false" Pos="800,432" rotation="0" hflip="1" vflip="1" label="5V" idLabPos="-72.8234,-21.8145" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 Pixels" Border="0 Pixels" Opacity="-1" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" />
+
+<item itemtype="TextComponent" CircId="TextComponent-32" mainComp="false" Show_id="true" Show_Val="false" Pos="792,484" rotation="0" hflip="1" vflip="1" label="Resistor" idLabPos="10.2262,39.9263" labelrot="0" valLabPos="-16,20" valLabRot="0" Margin="0 Pixels" Border="3 Pixels" Opacity="-2" Font="Helvetica [Cronyx]" Font_Size="10 _Pixels" Fixed_Width="false" />
+
+<item itemtype="Node" CircId="Node-18" mainComp="false" Pos="784,548" />
+
+<item itemtype="Connector" uid="connector-26" startpinid="Resistor-2-rPin" endpinid="Led-5-lPin" pointList="836,548,864,548" />
+
+<item itemtype="Connector" uid="connector-27" startpinid="Led-5-rPin" endpinid="Ground-1-Gnd" pointList="896,548,912,548,912,560" />
+
+<item itemtype="Connector" uid="connector-28" startpinid="mega328-3-PORTB5" endpinid="Node-18-0" pointList="764,548,784,548" />
+
+<item itemtype="Connector" uid="connector-29" startpinid="Fixed Voltage-16-outnod" endpinid="Node-18-1" pointList="772,416,772,548,784,548" />
+
+<item itemtype="Connector" uid="connector-30" startpinid="Node-18-2" endpinid="Resistor-2-lPin" pointList="784,548,804,548" />
+
+</circuit>
