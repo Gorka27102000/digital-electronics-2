@@ -1,29 +1,30 @@
-# digital-electronics-2
+# Lab 6: GORKA MANZANARES
 
-# Lab 5: GORKA MANZANARES
+### ASCII
 
-### Analog-to-Digital Conversion
+1. Complete the table with selected ASCII codes.
 
-1. Complete table with voltage divider, calculated, and measured ADC values for all five push buttons.
+   | **Char** | **Decimal** | **Hexadecimal** | **Binary** |
+   | :-: | :-: | :-: | :-: |
+   | `a` | 97 | 0x61 | `0b0110_0001` |
+   | `b` | 98 | 0x62 | `0b0110_0010` |
+   | `c` | 99 | 0x63 | `0b0110_0011` |
+   | `0` | 48 | 0x30 | `0b0011_0000` |
+   | `1` | 49 | 0x31 | `0b0011_0001` |
+   | `2` | 50 | 0x32 | `0b0011_0010` |
+   | `Esc` | 27 | 0x1B | `0b0001_1011` |
+   | `Space` | 32 | 0x20 | `0b0001_0000` |
+   | `Tab` | 9 | 0x09 | `0b0000_1001` |
+   | `Backspace` | 8 | 0x08 | `0b0000_1000` |
+   | `Enter` | 10 | 0x0A | `0b0000_1010` |
 
-   | **Push button** | **PC0 voltage** | **ADC value (calculated)** | **ADC value (measured)** | **ADC value (measured, hex)** |
-   | :-: | :-: | :-: | :-: | :-: |
-   | Right  | 0&nbsp;V     | 0    | 0    | 0   |
-   | Up     | 0.495&nbsp;V | 101  | 99   | 63  |
-   | Down   | 1.203&nbsp;V | 246  | 257  | 101 |
-   | Left   | 1.97&nbsp;V  | 403  | 409  | 199 |
-   | Select | 3.18&nbsp;V  | 651  | 639  | 27F |
-   | none   | 5&nbsp;V     | 1023 | 1023 | 3FF |
+### UART communication
 
-### Temperature meter
+2. Draw a timing diagram of the output from UART/USART when transmitting three character data `De2` in 4800 7O2 mode (7 data bits, odd parity, 2 stop bits, 4800&nbsp;Bd). The image can be drawn on a computer (by [WaveDrom](https://wavedrom.com/) for example) or by hand. Name all parts of timing diagram.
 
-Consider an application for temperature measurement. Use analog temperature sensor [TC1046](http://ww1.microchip.com/downloads/en/DeviceDoc/21496C.pdf), LCD, and a LED. Every 30 seconds, the temperature is measured and the value is displayed on LCD screen. When the temperature is too high, the LED will turn on.
-
-2. Draw a schematic of temperature meter. The image can be drawn on a computer or by hand. Always name all components, their values and pin names!
-
-   ![IMG-2890](https://user-images.githubusercontent.com/114478577/198678796-91c94573-a3f5-44a6-8385-6e6f0e9b5ec8.jpg)
+  ![IMG-3259](https://user-images.githubusercontent.com/114478577/200403350-3a13b7c5-7228-47fa-adf4-8f2517969fb2.jpg)
 
 
-3. Draw two flowcharts for interrupt handler `TIMER1_OVF_vect` (which overflows every 1&nbsp;sec) and `ADC_vect`. The image can be drawn on a computer or by hand. Use clear descriptions of individual algorithm steps.
+3. Draw a flowchart for function `uint8_t get_parity(uint8_t data, uint8_t type)` which calculates a parity bit of input 8-bit `data` according to parameter `type`. The image can be drawn on a computer or by hand. Use clear description of individual algorithm steps.
 
-   ![IMG-2915](https://user-images.githubusercontent.com/114478577/198683783-a65d0a2d-3bdb-45ef-8069-3f837d60a095.jpg)
+   ![your figure]()
