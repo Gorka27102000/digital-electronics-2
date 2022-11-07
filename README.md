@@ -27,6 +27,7 @@
 
 3. Draw a flowchart for function `uint8_t get_parity(uint8_t data, uint8_t type)` which calculates a parity bit of input 8-bit `data` according to parameter `type`. The image can be drawn on a computer or by hand. Use clear description of individual algorithm steps.
 
-![Uploading IMG-3261.jpg…]()
+![IMG-3261 (2)](https://user-images.githubusercontent.com/114478577/200410577-881f89c8-be94-4edb-9603-fd9100a27d75.jpg)
+
 
   
