@@ -1,30 +1,29 @@
-# Lab 7: GORKA MANZANARES
+# Lab 8: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
 
-### Arduino Uno pinout
+### Instruction set
 
-1. In the picture of the Arduino Uno board, mark the pins that can be used for the following functions/operations:
-   * PWM generators from Timer0, Timer1, Timer2 : 3, 5, 6, 9, 10 and 11
-   * analog channels for ADC : 14, 15, 16, 17, 18 and 19
-   * UART pins : 0 and 1
-   * I2C pins : 18 and 19
-   * SPI pins : 10, 11, 12 and 13
-   * external interrupt pins INT0, INT1 : 2 and 3
+1. Complete the conversion table with selected instructions:
 
-![arduino](https://user-images.githubusercontent.com/114478577/201709610-d6cf3d3a-253d-468f-8a1e-9f5b22a7c1d8.png)
+   | **Instruction** | **Binary opcode** | **Hex opcode** | **Compiler Hex opcode** |
+   | :-- | :-: | :-: | :-: |
+   | `add r24, r0` |  |  |  |
+   | `com r26` |  |  |  |
+   | `eor r26, r27` |  |  |  |
+   | `mul r22, r20` |  |  |  |
+   | `ret` | `1001_0101_0000_1000` | `95 08` |  |
 
+### 4-bit LFSR
 
-  
-### I2C communication
+2. Complete table with 4-bit LFSR values for different Tap positions:
 
-2. Draw a timing diagram of I2C signals when calling function `rtc_read_years()`. Let this function reads one byte-value from RTC DS3231 address `06h` (see RTC datasheet) in the range `00` to `99`. Specify when the SDA line is controlled by the Master device and when by the Slave device. Draw the whole request/receive process, from Start to Stop condition. The image can be drawn on a computer (by [WaveDrom](https://wavedrom.com/) for example) or by hand. Name all parts of timing diagram.
+   | **Tap position** | **Generated values** | **Length** |
+   | :-: | :-- | :-: |
+   | 4, 3 |  |  |
+   | 4, 2 |  |  |
+   | 4, 1 |  |  |
 
-   ![IMG-3478](https://user-images.githubusercontent.com/114478577/201773976-5a9df0d9-573b-4cbe-b780-1f1e2c1f9e9c.jpg)
+### Variable number of short pulses
 
+3. Draw a flowchart of function `void burst_c(uint8_t number)` which generates a variable number of short pulses at output pin. Let the pulse width be the shortest one. The image can be drawn on a computer or by hand. Use clear descriptions of the individual steps of the algorithms.
 
-### Meteo station
-
-Consider an application for temperature and humidity measurements. Use sensor DHT12, real time clock DS3231, LCD, and one LED. Every minute, the temperature, humidity, and time is requested from Slave devices and values are displayed on LCD screen. When the temperature is above the threshold, turn on the LED.
-
-3. Draw a flowchart of `TIMER1_OVF_vect` (which overflows every 1&nbsp;sec) for such Meteo station. The image can be drawn on a computer or by hand. Use clear description of individual algorithm steps.
-
-![IMG-3471](https://user-images.githubusercontent.com/114478577/201723386-85f01824-e9de-41d1-a85b-3fda4153adbd.jpg)
+   ![your figure]()
