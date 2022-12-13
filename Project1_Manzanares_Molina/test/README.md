@@ -1,8 +1,10 @@
 ##Team members
+
 Alberto Molina: C code, flowchart, Readme.
 Gorka Manzanares: C code, set up the code, Readme.
 
 ##Hardware description
+
 The devices we have used are the arduino board, the board, an LED, a resistor, the encoder, the LCD and the joystick as a button. 
 The joystick is synchronised with the LED, so that if it is held down, the LED will be on. Otherwise, it stays off.
 As for the encoder, we use it to make a counter that is displayed on the LCD. 
