@@ -1,16 +1,29 @@
-# digital-electronics-2
+# Lab 8: INSERT_YOUR_FIRSTNAME INSERT_YOUR_LASTNAME
 
-# Lab 4: GORKA MANZANARES
+### Instruction set
 
-### Stopwatch
+1. Complete the conversion table with selected instructions:
 
-1. Draw a flowchart for `TIMER2_OVF_vect` interrupt service routine which overflows every 16&nbsp;ms but it updates the stopwatch LCD screen approximately every 100&nbsp;ms (6 x 16&nbsp;ms = 100&nbsp;ms). Display tenths of a second, seconds, and minutes and let the stopwatch counts from `00:00.0` to `59:59.9` and then starts again. The image can be drawn on a computer or by hand. Use clear descriptions of the individual steps of the algorithms.
+   | **Instruction** | **Binary opcode** | **Hex opcode** | **Compiler Hex opcode** |
+   | :-- | :-: | :-: | :-: |
+   | `add r24, r0` | 0000_1101_1000_0000 | 0D 80 | 80 0D |
+   | `com r26` | 1001_0101_1010_0000 | 95 A0	| A0 95 |
+   | `eor r26, r27` | 0010_0111_1010_1011 | 27 AB | AB 27 |
+   | `mul r22, r20` | 1001_1111_0110_0100 | 9F 64 | 64 9F |
+   | `ret` | `1001_0101_0000_1000` | `95 08` | 08 95 |
 
-   ![IMG-2808](https://user-images.githubusercontent.com/114478577/197635898-e59527c5-6e7e-4a13-aad9-445e9131ee37.jpg)
+### 4-bit LFSR
 
+2. Complete table with 4-bit LFSR values for different Tap positions:
 
-### Kitchen alarm
+   | **Tap position** | **Generated values** | **Length** |
+   | :-: | :-- | :-: |
+   | 4, 3 | 0 1 3 7 14 13 11 6 12 9 2 5 10 4 8 | 15 |
+   | 4, 2 | 0 1 3 6 12 8 | 6 |
+   | 4, 1 | 0 1 2 5 10 4 9 3 6 13 11 7 14 12 8 | 15 |
 
-2. Draw a schematic of the kitchen alarm application that counts down the time with an LCD, one LED and three push buttons: start, +1 minute, -1 minute. Use the +1/-1 minute buttons to increment/decrement the timer value. After pressing the Start button, the countdown starts. The countdown value is shown on the display in the form of mm.ss (minutes.seconds). At the end of the countdown, the LED will start blinking. The image can be drawn on a computer or by hand. Always name all components and their values.
+### Variable number of short pulses
 
-   ![LCD2](https://user-images.githubusercontent.com/114478577/197635966-1350982b-bbae-4f2f-ba62-79c743b99ebb.png)
+3. Draw a flowchart of function `void burst_c(uint8_t number)` which generates a variable number of short pulses at output pin. Let the pulse width be the shortest one. The image can be drawn on a computer or by hand. Use clear descriptions of the individual steps of the algorithms.
+
+![IMG-3656](https://user-images.githubusercontent.com/114478577/203113558-987dcd38-bb4e-43a8-9fe6-a4291387ad1a.jpg)
