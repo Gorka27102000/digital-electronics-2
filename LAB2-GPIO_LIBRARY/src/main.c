@@ -54,7 +54,15 @@ int main(void)
     //  |  0010 0000 ... Oring by my mask
     //  ------------
     //     0110 1101 
+    uint8_t a=0, b=0, i=0;
+        for (i = 0; i < 100; i++)
+            a++;
+        b++;
+        for (i = 0; i < 10; i++) {
 
+            b++;
+        }
+        printf(a,b);
     GPIO_mode_output(&DDRB, LED_GREEN);
     GPIO_mode_output(&DDRB, LED_RED);  
 
